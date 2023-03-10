@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-#define LINHA_A 2048
-#define COLUNA_A 2048
-#define LINHA_B 2048
-#define COLUNA_B 2048
+#define LINHA_A 1500
+#define COLUNA_A 1500
+#define LINHA_B 1500
+#define COLUNA_B 1500
 
 int main(void) {
     float **matrizA = (float**) malloc(LINHA_A*sizeof(float*));

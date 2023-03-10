@@ -3,27 +3,27 @@
 #include <immintrin.h>
 #include <time.h>
 
-#define LINHA_A 1000
-#define COLUNA_A 1000
-#define LINHA_B 1000
-#define COLUNA_B 1000
+#define LINHA_A 1500
+#define COLUNA_A 1500
+#define LINHA_B 1500
+#define COLUNA_B 1500
 
 int main(void) {
 
 
-    float *matrizA = (float*) aligned_alloc(32, LINHA_A*COLUNA_A*sizeof(float));
+    float *matrizA = (float*) _aligned_malloc(LINHA_A*COLUNA_A*sizeof(float), 32);
 
     /*for(int i = 0; i < LINHA_A; i++){
         matrizA[i] = (float*) _aligned_malloc(COLUNA_A*sizeof(float), 32);
     }*/
 
-    float *matrizB = (float*) aligned_alloc(32, LINHA_B*COLUNA_B*sizeof(float));
+    float *matrizB = (float*) _aligned_malloc(LINHA_B*COLUNA_B*sizeof(float), 32);
 
     /*for(int i = 0; i < LINHA_B; i++){
         matrizB[i] = (float*) _aligned_malloc(COLUNA_B*sizeof(float), 32);
     }*/
 
-    float *matrizRE = (float*) aligned_alloc(32, LINHA_A*COLUNA_B*sizeof(float));
+    float *matrizRE = (float*) _aligned_malloc(LINHA_A*COLUNA_B*sizeof(float), 32);
 
     /*for(int i = 0; i < LINHA_A; i++){
         matrizRE[i] = (float*) _aligned_malloc(COLUNA_B*sizeof(float), 32);

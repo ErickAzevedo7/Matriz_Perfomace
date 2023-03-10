@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define LINHA 30000
-#define COLUNA 30000
+#define LINHA 50000
+#define COLUNA 50000
 
 int main(){
     float** matriz = (float**) malloc(LINHA*sizeof(float*));
